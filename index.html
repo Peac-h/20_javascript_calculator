@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calculator, coded by the Peach." />
+    <meta name="keywords" content="HTML, CSS, Sass, Javascript, Coding" />
+    <meta name="author" content="the Peach" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="fav/site.webmanifest" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+
+    <title>Javascript Calculator</title>
+  </head>
+
+  <body>
+    <div class="mode-toggler">
+      <label class="switch">
+        <input type="checkbox" id="mode" />
+        <span class="slider">
+          <span class="circle"></span>
+        </span>
+      </label>
+    </div>
+
+    <main>
+      <div id="calculator" class="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+          <button class="clear btn" id="clear">AC</button>
+          <button class="plus-minus btn" id="plusMinus">
+            <p>/</p>
+            <span>&plusmn;</span>
+          </button>
+          <button class="percentage btn" id="percent"><p>/</p></button>
+          <button class="operator btn division" data-operator="/">
+            &divide;
+          </button>
+          <button class="number btn" data-number="7">7</button>
+          <button class="number btn" data-number="8">8</button>
+          <button class="number btn" data-number="9">9</button>
+          <button class="operator btn multiplier" data-operator="*">
+            <span>&times;</span>
+          </button>
+          <button class="number btn" data-number="4">4</button>
+          <button class="number btn" data-number="5">5</button>
+          <button class="number btn" data-number="6">6</button>
+          <button class="operator btn minus" data-operator="-">
+            <span>&minus;</span>
+          </button>
+          <button class="number btn" data-number="1">1</button>
+          <button class="number btn" data-number="2">2</button>
+          <button class="number btn" data-number="3">3</button>
+          <button class="operator btn plus" data-operator="+">
+            <span>&plus;</span>
+          </button>
+          <button class="number btn zero" data-number="0">0</button>
+          <button class="number btn" data-number=".">,</button>
+          <button class="btn equal" id="equal"><span>&equals;</span></button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="author">
+        Coded with love and effort, by the
+        <a href="https://github.com/Peac-h"> Peach</a>.
+      </div>
+    </footer>
+  </body>
+</html>

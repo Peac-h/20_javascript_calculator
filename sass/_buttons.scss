@@ -1,0 +1,270 @@
+// general rules
+
+.btn {
+  font-family: inherit;
+  width: 5.8rem;
+  height: 5.8rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  & span {
+    display: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.number {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-white);
+  background: var(--color-dark-grey);
+  transition: 1s;
+
+  &:active,
+  &:focus {
+    background: var(--color-middle-grey);
+    transition: 0s;
+  }
+}
+
+.operator {
+  color: var(--color-white);
+  background: var(--color-orange);
+}
+
+// specifics buttons
+
+// "+"
+.plus {
+  position: relative;
+  transition: all 0.5s;
+
+  &::before,
+  &::after {
+    content: "";
+    height: 0.3rem;
+    width: 1.7rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+
+  &::after {
+    rotate: 90deg;
+  }
+
+  &:focus {
+    background: var(--color-white);
+    color: var(--color-orange);
+  }
+
+  &:focus::before,
+  &:focus::after {
+    background: var(--color-orange);
+  }
+}
+
+// "-"
+.minus {
+  position: relative;
+  transition: all 0.5s;
+
+  &::before {
+    content: "";
+    height: 0.3rem;
+    width: 1.7rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+
+  &:focus::before,
+  &:focus::after {
+    background: var(--color-orange);
+  }
+
+  &:focus {
+    background: var(--color-white);
+    color: var(--color-orange);
+  }
+}
+
+// "*"
+.multiplier {
+  position: relative;
+  transition: all 0.5s;
+
+  &::before,
+  &::after {
+    content: "";
+    height: 0.3rem;
+    width: 2rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  &::before {
+    rotate: 45deg;
+  }
+  &::after {
+    rotate: -45deg;
+  }
+
+  &:focus {
+    background: var(--color-white);
+    color: var(--color-orange);
+  }
+
+  &:focus::before,
+  &:focus::after {
+    background: var(--color-orange);
+  }
+}
+
+// "/"
+.division {
+  font: inherit;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+
+  transition: all 0.5s;
+
+  &:focus {
+    background: var(--color-white);
+    color: var(--color-orange);
+  }
+}
+
+// "%"
+.percentage {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-black);
+  background: var(--color-light-grey);
+  transition: 1s;
+  rotate: 20deg;
+  position: relative;
+
+  &:active,
+  &:focus {
+    background: var(--color-white);
+    transition: 0s;
+  }
+
+  &::before,
+  &::after {
+    content: "o";
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &::before {
+    top: 30%;
+    left: 30%;
+  }
+
+  &::after {
+    bottom: 30%;
+    right: 30%;
+  }
+}
+
+// "+/-"
+.plus-minus {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-black);
+  background: var(--color-light-grey);
+  transition: 1s;
+  position: relative;
+
+  &:active,
+  &:focus {
+    background: var(--color-white);
+    transition: 0s;
+  }
+
+  p {
+    rotate: 20deg;
+  }
+
+  &::before {
+    content: "+";
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &::after {
+    content: "-";
+    position: absolute;
+    bottom: 15%;
+    right: 30%;
+  }
+}
+
+// "="
+.equal {
+  background: var(--color-orange);
+  transition: 1s;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    height: 0.3rem;
+    width: 1.7rem;
+    background: #fff;
+    position: absolute;
+  }
+  &::before {
+    translate: -50%;
+    top: 40%;
+  }
+  &::after {
+    translate: -50%;
+    bottom: 40%;
+  }
+
+  &:active,
+  &:focus {
+    background: #f5c581;
+    transition: 0s;
+  }
+}
+
+// "C"
+.clear {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-black);
+  background: var(--color-light-grey);
+  transition: 1s;
+
+  &:active,
+  &:focus {
+    background: var(--color-white);
+    transition: 0s;
+  }
+}
+
+// "0"
+.zero {
+  width: 12.6rem;
+  border-radius: 30px;
+  text-align: left;
+  padding-left: 2rem;
+}
