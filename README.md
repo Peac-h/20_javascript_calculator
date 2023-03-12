@@ -1,25 +1,24 @@
-# Project 26 - Todo App (OOP Project)
+# Project 20 - Javascript Calculator
 
-This is Javascript Todo App built in object oriented programming style, using JS ES6 Classes.
+This is a JavaScript calculator designed to look like the **Apple calculator**.
 
-The App stores todo list. Tasks can be added, removed, changed or marked as completed.
+The `Intl.NumberFormat` object is used for rendering numbers, and a variety of number rendering and validation functions have been implemented. The rendered number font adapts to the size of the display screen.
 
-The App stores all the receives data in the local storage and whenever revisiting the page renders exactly in the same condition as it was left.
+**For a bit of fun, try dividing numbers by zero and performing calculations with bigInt numbers, and do it several times.**
 
-Responsive for all screen sizes.
+The app has light and dark modes, and the preferred mode is stored in local storage so that the next time a user visits the application, it will be rendered in the preferred mode.
 
-**This is my 26th project so far.**
+It is responsive to all screen sizes, with only one media query.
 
 ## Checkout the live demo
 
-[Todo App]()
+[JavaScript calculator]()
 
 ## Built with
 
 - html
 - css
 - sass
-- OOP style (ES6 Classes)
 - vanilla javascript
 
 ## Author
