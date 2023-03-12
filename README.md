@@ -14,7 +14,9 @@ It is responsive to all screen sizes, with only one media query.
 
 [JavaScript calculator](https://peac-h.github.io/20_javascript_calculator/)
 
-![Calculator](https://raw.githubusercontent.com/Peac-h/20_javascript_calculator/main/screenshot.png)
+![Calculator Dark](https://raw.githubusercontent.com/Peac-h/20_javascript_calculator/main/screenshot.png)
+
+![Calculator Light](https://raw.githubusercontent.com/Peac-h/20_javascript_calculator/main/screenshot%20--lightmode.png)
 
 ## Built with
 
