@@ -8,7 +8,6 @@ const equal = document.getElementById("equal");
 const clear = document.getElementById("clear");
 const plusMinus = document.getElementById("plusMinus");
 const percent = document.getElementById("percent");
-const mode = document.getElementById("mode");
 
 // Code Variables
 let currentNumber = 0,
@@ -309,11 +308,35 @@ function adaptFont(object) {
   display.style.justifyContent = "center";
 }
 
-mode.addEventListener("click", function () {
-  if (mode.checked) {
-    document.body.classList.add("light-mode");
-  }
-  if (!mode.checked) {
-    document.body.classList.remove("light-mode");
-  }
+// mode switch
+// light mode
+const enableLightMode = function () {
+  document.body.classList.add("light-mode");
+  localStorage.setItem("light-mode", "enabled");
+};
+// dark mode
+const disableLightMode = function () {
+  document.body.classList.remove("light-mode");
+  localStorage.setItem("light-mode", null);
+};
+
+// toggle button
+const lightModeToggle = document.getElementById("mode");
+
+// information from localStorage
+let lightMode = localStorage.getItem("light-mode");
+
+// applying the localStorage mode
+if (lightMode === "enabled") {
+  enableLightMode();
+  mode.checked = true;
+}
+
+// listen to the toggler click event
+lightModeToggle.addEventListener("click", function () {
+  lightMode = localStorage.getItem("light-mode");
+
+  if (lightMode !== "enabled") return enableLightMode();
+
+  return disableLightMode();
 });
