@@ -12,7 +12,7 @@ It is responsive to all screen sizes, with only one media query.
 
 ## Checkout the live demo
 
-[JavaScript calculator]()
+[JavaScript calculator](https://peac-h.github.io/20_javascript_calculator/)
 
 ## Built with
 
